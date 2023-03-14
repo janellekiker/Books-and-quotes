@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Books{% endblock title %}
+{% block content %}
+<main>
+  <div>
+    <h1>My Books</h1>
+    <div>
+        {% for book in book_list %}
+        <div>
+            <h3>{{ book.title }}</h3>
+            <img src="{{ book.picture }}" />
+            <p>{{ book.started }} - {{ book.finished }}</p>
+        </div>
+        {% empty %}
+        <p>You haven't added any books...</p>
+        {% endfor %}
+  </div>
+</main>
+{% endblock content %}
