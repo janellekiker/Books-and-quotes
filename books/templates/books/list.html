@@ -8,18 +8,27 @@
 
 {% block content %}
 <main>
-  <div>
-    <h1>My Books</h1>
-    <div>
+  <div class="welcome">
+    <h1 class="title">Book Quotes</h1>
+    <img src="{% static "images/bookshelf.jpg" %}" alt="Drawn book shelf" class="img" />
+  </div>
+  <div class="maincontainer">
+    <h1 id="sectionTitle">Books I've read</h1>
         {% for book in book_list %}
         <div>
-            <h3>{{ book.title }}</h3>
-            <img src="{{ book.picture }}" />
-            <p>{{ book.started }} - {{ book.finished }}</p>
+          <div class="bookContainer">
+        <div class="leftSide">
+            <img src="{{ book.picture }}" id="bookimage" />
+        </div>
+        <div class="rightSide">
+          <h2 id="quoteTitle">One of my favorite quotes:</h2>
+          <p>EVENTUALLY ADD THIS</p>
+        </div>
         </div>
         {% empty %}
         <p>You haven't added any books...</p>
         {% endfor %}
   </div>
+</div>
 </main>
 {% endblock content %}
