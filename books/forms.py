@@ -12,3 +12,8 @@ class BookForm(ModelForm):
             "started",
             "finished",
         ]
+
+class BookUpdateForm(ModelForm):
+    class Meta:
+        model = Book
+        fields = "__all__"

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script&family=Noto+Serif+Lao:wght@300&display=swap');
+
+/* NAVBAR STYLING */
+/* gets rid of dots and formatting of nav bar */
+#ulnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+/* remove spacing, displays all links on one line */
+li {
+    float: left;
+    font-family: "Calistoga", serif;
+}
+
+
+/* #logout {
+    float: right;
+} */
+
+/* choose layout for links */
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* change color of link background when you hover */
+li a:hover {
+    background-color: black;
+    color: white;
+}

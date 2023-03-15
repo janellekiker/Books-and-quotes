@@ -5,10 +5,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href={% static "../static/css/navbar.css" %} />
     {% block extrahead %}{% endblock extrahead %}
     <title>{% block title %} {% endblock title %}</title>
   </head>
   <body>
+    <header>
+      <nav>
+          <ul id="ulnav">
+            <li>
+              <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+              <a href="{% url 'book_list' %}">My Books</a>
+            </li>
+            <li>
+              <a href="{% url 'add_book' %}">Add a book</a>
+            </li>
+          </ul>
+      </nav>
+  </header>
     {% block content %} {% endblock content %}
   </body>
 </html>
