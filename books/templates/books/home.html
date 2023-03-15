@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href={% static "css/home.css" %} />
+{% endblock extrahead %}
+
+{% block title %}Books{% endblock title %}
+
+{% block content %}
+<main>
+  <div class="welcome">
+    <h1 class="title">Book Quotes</h1>
+    <img src="{% static "images/bookshelf.jpg" %}" alt="Drawn book shelf" class="img" />
+  </div>
+  <div class="maincontainer">
+    <h1 id="sectionTitle">Some of my favorite quotes</h1>
+      <div class="bookContainer">
+        <div class="imgLeftSide">
+          <img src="{% static "images/wtcs.jpeg" %}" alt="Where the Crawdads Sing Book Cover" id="bookimage" />
+        </div>
+        <div class="quoteRightSide">
+          <p><em>"Why should the injured, the still bleeding, bear the pain of forgiveness?"</em></p>
+          <p id="pageNumberRight">pg. 198</p>
+        </div>
+      </div>
+      <div class="bookContainer">
+        <div class="quoteLeftSide">
+          <p><em>"Not knowing for certain, but refusing to give way to those who claim certainty was a privilege I had never allowed myself. My life was narrated for me by others. Their voices were forceful, emphatic, absolute. It had never occured to me that my voice might be as strong as theirs."</em>
+          <p id="pageNumberLeft"> pg. 197</p>
+        </div>
+          <div class="imgRightSide">
+            <img src="{% static "images/educated.jpeg" %}" alt="Educated Book Cover" id="bookimage" />
+          </div>
+        </div>
+      </div>
+      <div class="bookContainer">
+        <div class="imgLeftSide">
+          <img src="{% static "images/ethicalslut.jpeg" %}" alt="Ethical Slut 3rd Edition Book Cover" id="bookimage" />
+        </div>
+        <div class="quoteRightSide">
+          <p><em>"Let's remember to honor the courage it takes to ask for support, to share vulnerable feelings. Let's pat ourselves on the back when we do things that scare us, and then let's do them some more."</em></p>
+          <p id="pageNumberRight">pg. 84</p>
+        </div>
+      </div>
+
+
+      <div class="currentlyReading">
+        <h1 class="title">Currently Reading</h1>
+        <div class="bookList">
+        <img src="{% static "images/weyward.jpeg" %}" alt="Weyward Book Cover" class="book" />
+        <img src="{% static "images/jajw.png" %}" alt="Jesus and John Wayne Book Cover" class="book" />
+        <img src="{% static "images/trts.jpeg" %}" alt="Jesus and John Wayne Book Cover" class="book" />
+        </div>
+      </div>
+  </div>
+</main>
+{% endblock content %}

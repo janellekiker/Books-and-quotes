@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.shortcuts import redirect
 
 def redirect_to_book_list(request):
-    return redirect("book_list")
+    return redirect("home")
 
 
 urlpatterns = [
