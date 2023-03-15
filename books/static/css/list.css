@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script&family=Noto+Serif+Lao:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Serif Lao", serif;
+}
+
+.sectionTitle {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.sectionTitle .title {
+    font-size: 4.5rem;
+    font-family: "Dancing Script", sans-serif;
+
+}
+
+.sectionTitle .img {
+    height: 100%;
+    width: 50%;
+}
+
+.sectionTitle .add {
+    font-size: 1rem;
+    font-family: "Dancing Script", sans-serif;
+}
+
+.maincontainer {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 20px;
+}
+
+p {
+    color: black;
+    font-family: "Noto Serif Lao", sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 2%;
+}
+
+#bookimage {
+    height: 300px;
+    width: 200px;
+    box-shadow: 0px 4px 4px rgba(114, 94, 84, 0.5);
+}
