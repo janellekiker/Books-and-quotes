@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href={% static "css/add.css" %} />
+{% endblock extrahead %}
+
+{% block title %}Add New Book!{% endblock title %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <h1>Add another book</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="button">Add</button>
+        </form>
+    </div>
+</main>
+{% endblock content %}
