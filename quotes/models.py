@@ -8,6 +8,6 @@ class Quote(models.Model):
     notes = models.TextField(null=True, blank=True)
     book = models.ForeignKey(
         Book,
-        related_name="book",
+        related_name="quotes",
         on_delete=models.CASCADE,
     )

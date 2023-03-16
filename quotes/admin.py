@@ -8,4 +8,5 @@ class QuoteAdmin(admin.ModelAdmin):
         "quote",
         "page",
         "book",
+        "id",
     )

@@ -42,6 +42,7 @@ input:focus {
 
 input, textarea {
     width: calc(100% - 5px);
+    height: 10%;
     border: 1px solid white;
     outline: none;
     font-family: "Noto Serif Lao", serif-sans;

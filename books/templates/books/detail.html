@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href={% static "css/detail.css" %} />
+{% endblock extrahead %}
+
+{% block content %}
+<main>
+    <div class="bookContainer">
+        <div class="leftSide">
+            <img src="{{ book.picture }}" />
+            {{ book.started}} - {{ book.finished }}
+        </div>
+        <div class="rightSide">
+            <h1>{{ book.title }}</h1>
+            <p>{{ book.summary }}</p>
+        </div>
+    </div>
+    <div class="quoteContainer">
+        <ul>
+            {% for quote in book.quotes.all %}
+            <li class="li">{{ quote.quote }} {{ quote.page }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</main>
+
+{% endblock content %}

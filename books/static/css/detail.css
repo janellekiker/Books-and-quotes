@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script&family=Noto+Serif+Lao:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Serif Lao", sans-serif;
+    background-image: url("../images/bookbackground.jpg");
+    background-repeat: repeat;
+}
+
+.bookContainer {
+    background-color: black;
+    color: white;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 3%;
+}
+
+.bookContainer .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    margin-left: 5%;
+    margin-top: 5%
+}
+
+img {
+    width: 15rem;
+    height: 20rem;
+}
+
+.bookContainer .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    flex-grow: 4;
+    align-items: center;
+    padding: 10px;
+    font-family: "Noto Serif Lao", sans-serif;
+    font-size: 1rem;
+}
+
+.quoteContainer {
+    background-color: black;
+    color: white;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+    margin: 3%;
+}
+
+.quoteContainer .li {
+    font-family: "Noto Serif Lao", sans-serif;
+    font-size: 1.2rem;
+    border-bottom: 1px solid white;
+    padding: 2%;
+    list-style-type: none;
+}

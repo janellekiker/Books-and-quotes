@@ -16,10 +16,12 @@
     <div class="mainGrid">
         {% for book in book_list %}
         <div>
+            <a href='{% url 'show_book' book.id %}'>
             <img src="{{ book.picture }}" id="bookimage" />
+            </a>
             <p>Started on: {{ book.started }}</p>
             <p>Finished on: {{ book.finished }}</p>
-            <a href="{% url 'edit_book' book.id %}">Edit</a>
+            <a href="{% url 'edit_book' book.id %}" class="editLink">Edit</a>
         </div>
         {% empty %}
         <p>You haven't added any books</p>

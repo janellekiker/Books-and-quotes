@@ -8,4 +8,5 @@ class BookAdmin(admin.ModelAdmin):
         "title",
         "started",
         "finished",
+        "id",
     )

@@ -47,3 +47,10 @@ def edit_book(request, id):
     }
 
     return render(request, "books/edit.html", context)
+
+def show_book(request, id):
+    book = get_object_or_404(Book, id=id)
+    context = {
+        "book": book
+    }
+    return render(request, "books/detail.html", context)
