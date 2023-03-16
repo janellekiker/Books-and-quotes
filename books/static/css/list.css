@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script&family=Noto+Serif+Lao:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Calistoga&family=Dancing+Script&family=Noto+Serif+Lao:wght@300&display=swap');
+
 
 body {
     margin: 0;
@@ -17,7 +18,7 @@ body {
 
 .sectionTitle .title {
     font-size: 4.5rem;
-    font-family: "Dancing Script", sans-serif;
+    font-family: "Cabin Sketch", sans-serif;
     margin-right: 2rem;
 }
 
