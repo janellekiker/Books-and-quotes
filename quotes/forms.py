@@ -8,6 +8,5 @@ class QuoteForm(ModelForm):
         fields = [
             "quote",
             "page",
-            "notes",
             "book",
         ]
