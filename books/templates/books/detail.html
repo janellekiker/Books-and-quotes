@@ -20,7 +20,7 @@
     <div class="quoteContainer">
         <ul>
             {% for quote in book.quotes.all %}
-            <li class="li">{{ quote.quote }} {{ quote.page }}</li>
+            <li class="li">"{{ quote.quote }}" pg. {{ quote.page }}</li>
             {% endfor %}
         </ul>
     </div>

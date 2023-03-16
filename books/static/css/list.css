@@ -10,15 +10,15 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: auto;
 }
 
-
 .sectionTitle .title {
     font-size: 4.5rem;
     font-family: "Dancing Script", sans-serif;
+    margin-right: 2rem;
 }
 
 .sectionTitle .img {
