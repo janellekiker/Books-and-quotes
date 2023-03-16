@@ -46,6 +46,11 @@ img {
     font-size: 1rem;
 }
 
+h1 {
+    font-family: "Calistoga";
+    color:white;
+}
+
 .quoteContainer {
     background-color: black;
     color: white;
@@ -53,15 +58,17 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     padding: 2rem;
-    margin: 3%;
+    margin: 2%;
 }
 
 .quoteContainer .li {
     font-family: "Noto Serif Lao", sans-serif;
     font-size: 1.2rem;
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 1%;
     border-bottom: 1px solid white;
-    padding: 2%;
     list-style-type: none;
 }
