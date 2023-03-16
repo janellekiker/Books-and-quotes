@@ -17,7 +17,7 @@
         {% for book in book_list %}
         <div>
             <a href='{% url 'show_book' book.id %}'>
-            <img src="{{ book.picture }}" id="bookimage" />
+            <img src="{{ book.picture }}" class="bookimage" />
             </a>
             <p>Started on: {{ book.started }}</p>
             <p>Finished on: {{ book.finished }}</p>

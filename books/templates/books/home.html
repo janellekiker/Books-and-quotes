@@ -15,15 +15,6 @@
   <div class="maincontainer">
     <h1 id="sectionTitle">Some of my favorite quotes...</h1>
       <div class="bookContainer">
-        <div class="imgLeftSide">
-          <img src="{% static "images/wtcs.jpeg" %}" alt="Where the Crawdads Sing Book Cover" id="bookimage" />
-        </div>
-        <div class="quoteRightSide">
-          <p><em>"Why should the injured, the still bleeding, bear the pain of forgiveness?"</em></p>
-          <p id="pageNumberRight">pg. 198</p>
-        </div>
-      </div>
-      <div class="bookContainer">
         <div class="quoteLeftSide">
           <p><em>"The truth is that meaningful change is a process. It can be uncomfortable and is often risky, especially when we’re talking about embracing our imperfections, cultivating authenticity, and looking the world in the eye and saying, “I am enough.”"</em>
           <p id="pageNumberLeft"> pg. 160</p>
@@ -42,7 +33,17 @@
           <p id="pageNumberRight">pg. 84</p>
         </div>
       </div>
-
+    </div>
+    <div class="bookContainer">
+      <div class="quoteLeftSide">
+        <p><em>"Why should the injured, the still bleeding, bear the pain of forgiveness?"</em>
+        <p id="pageNumberLeft"> pg. 198</p>
+      </div>
+        <div class="imgRightSide">
+          <img src="{% static "images/wtcs.jpeg" %}" alt="Where the Crawdads Sing Book Cover" id="bookimage" />
+        </div>
+      </div>
+    </div>
 
       <div class="currentlyReading">
         <h1 class="title">Currently Reading</h1>
@@ -52,6 +53,5 @@
         <img src="{% static "images/trts.jpeg" %}" alt="Jesus and John Wayne Book Cover" class="book" />
         </div>
       </div>
-  </div>
 </main>
 {% endblock content %}
