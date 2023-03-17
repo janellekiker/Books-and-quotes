@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Calistoga&family=Dancing+Script&family=Noto+Serif+Lao:wght@300&display=swap');
+
+body {
+    background-image: url("../images/loginplant.jpeg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-color: #F1F0EE;
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    font-family: "Noto Serif Lao", serif-sans;
+}
+
+.container {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* FORM STYLING */
+/* input bar takes up entire page */
+input {
+    width:100%;
+    box-sizing: border-box;
+    font-family: "Noto Serif Lao", serif-sans;
+}
+/* changes border color on selected input box */
+input:focus {
+    border: 3px solid #F1F0EE;
+}
+
+input, textarea {
+    width: calc(100% - 18px);
+    border: 1px solid #F1F0EE;
+    outline: none;
+    border-radius: 0.625rem;
+    }
+
+
+/* button */
+.button {
+    width: 100%;
+    background-color: #F1F0EE;
+    border: none;
+    border-radius: 0.625rem;
+    font-family: "Noto Serif Lao", sans-serif;
+    font-size: 16px;
+    color: black;
+    padding: 2% 3%;
+    text-decoration: none;
+    margin: 5% 5% 5% 0%;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: black;
+    color: #F1F0EE;
+    border: 3px solid #F1F0EE;
+}
+
+h1 {
+    font-family: "Calistoga", serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #F1F0EE;
+}
+
+form {
+    border: 2px solid #F1F0EE;
+    padding: 5%;
+    border-radius: 0.625rem;
+    margin-bottom: 5%;
+}

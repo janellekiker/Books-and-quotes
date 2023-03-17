@@ -14,7 +14,7 @@
         <h1 class="title">Books I've read</h1>
     </div>
     <div class="mainGrid">
-        {% for book in book_list %}
+        {% for book in book_list.all %}
         <div>
             <a href='{% url 'show_book' book.id %}'>
             <img src="{{ book.picture }}" class="bookimage" />
