@@ -26,14 +26,14 @@
             <li>
               <a href="{% url 'add_quote' %}">Add a quote</a>
             </li>
-            <li style="float: right;">
+            <li class="floatright">
               <a href="{% url 'logout' %}">Logout</a>
             </li>
             {% else %}
-            <li style="float: right;">
+            <li class="floatright">
               <a href="{% url 'login' %}">Login</a>
             </li>
-            <li style="float: right;">
+            <li class="floatright">
               <a href="{% url 'signup' %}">Signup</a>
             </li>
             {% endif %}

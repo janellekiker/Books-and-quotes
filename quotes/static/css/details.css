@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Dancing+Script&family=Noto+Serif+Lao:wght@300&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Noto Serif Lao", sans-serif;
+    background-image: url("../images/bookbackground.jpg");
+    background-repeat: repeat;
+}
+
+.quotecontainer {
+    background-color: black !important;
+    color: white;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 3%;
+}
+
+.notecontainer {
+    background-color: black !important;
+    color: white;
+    border-radius: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 3%;
+}
+
+
+h1 {
+    font-family: "Calistoga";
+    color:purple;
+}

@@ -20,7 +20,9 @@
     <div class="quoteContainer">
         <ul>
             {% for quote in book.quotes.all %}
+            <a href='{% url 'show_quote' quote.id %}'>
             <li class="li">"{{ quote.quote }}" pg. {{ quote.page }}</li>
+            </a>
             {% endfor %}
         </ul>
     </div>

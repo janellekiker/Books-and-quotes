@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block extrahead %}
+<link rel="stylesheet" href={% static "css/details.css" %} />
+{% endblock extrahead %}
+
+{% block content %}
+<main>
+    <div class="quotecontainer">
+        <p>{{ quote.quote }}</p>
+    </div>
+    <div class="notecontainer">
+        <h1>Notes...</h1>
+        <p>{{ quote.note }}</p>
+    </div>
+</main>
+{% endblock content %}
