@@ -18,3 +18,12 @@ To fully enjoy this application on your local machine, please make sure to follo
 2. CD into the new project directory
 3. Run ```python manage.py runserver```
 4. Create an account and enjoy the website!
+
+## Application Preview
+![Homepage](./images/homepage.png)
+![Signup](./images/signup.png)
+![Login](./images/login.png)
+![BookList](./images/bookList.png)
+![BookDetail](./images/bookDetail.png)
+![createBook](./images/createBook.png)
+![createQuote](./images/createQuote.png)
